@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/reg"
+    android:id="@+id/activity_registro"
+    tools:context="com.example.stefania.taller3redes_animeforum.registro">
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginBottom="242dp"
+        android:id="@+id/usuario_sesion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"
+        android:theme="@style/CampoTextoBlanco"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="42dp"
+        android:id="@+id/correo_registro"
+        android:layout_alignTop="@+id/usuario_sesion"
+        android:layout_alignStart="@+id/usuario_sesion"
+        android:hint="e-mail"
+        android:theme="@style/CampoTextoBlanco"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/contrasena_sesion"
+        android:layout_below="@+id/correo_registro"
+        android:layout_alignStart="@+id/correo_registro"
+        android:layout_marginTop="11dp"
+        android:hint="Contraseña"
+        android:fontFamily="sans-serif"
+        android:theme="@style/CampoTextoBlanco"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/registro_buttonregistro"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/contrasena_sesion"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/irSesion_registro"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/atrasInicio"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/registro_buttonregistro" />
+
+</RelativeLayout>

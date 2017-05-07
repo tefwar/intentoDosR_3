@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/log"
+    android:id="@+id/activity_inicio"
+    tools:context="com.example.stefania.taller3redes_animeforum.inicio">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/atrasInicio"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentTop="true"
+       />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:id="@+id/irRegistro_sesion"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/iniciar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/contrasena_sesion"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginBottom="201dp"
+        android:id="@+id/usuario_sesion"
+        android:contentDescription="Usuario"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:hint="Usuario"
+        android:theme="@style/CampoTextoBlanco"
+        android:layout_above="@+id/irRegistro_sesion"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="47dp"
+        android:id="@+id/contrasena_sesion"
+        android:contentDescription="Contraseña"
+        android:layout_alignTop="@+id/usuario_sesion"
+        android:layout_alignStart="@+id/usuario_sesion"
+        android:hint="Contraseña"
+        android:fontFamily="sans-serif"
+        style="@android:style/Widget.Holo.EditText"
+        android:theme="@style/CampoTextoBlanco"/>
+</RelativeLayout>
